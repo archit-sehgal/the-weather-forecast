@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
+    <title>The Weather Forecast</title>
+</head>
+
+<body>
+    <div class="loader">
+        <img src="Loading_icon.gif" alt="">
+    </div>
+    <nav>
+        <form action="">
+            <input id="city" type="text" name="search" id="city" placeholder="enter city name here" autocomplete="off">
+            <button type="submit" id="submit"> Search</button>
+        </form>
+    </nav>
+    <div class="container flex">
+        <div class="weather-name">
+            <h2>📌Weather for <span id="cityname"></span></h2>
+        </div>
+        <div class="weather-desc">
+            <div class="temp-head">
+                <span id="temp"></span>
+            </div>
+            <ul>
+                <li>Feels like <span id="feels_like" class="span-change"></span></li>
+                <li>humidity is <span id="humidity" class="span-change"></span></li>
+                <li>min temp is <span id="min_temp" class="span-change"></span></li>
+                <li> max temp is <span id="max_temp" class="span-change"></span></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
